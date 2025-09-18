@@ -83,63 +83,8 @@
             font-weight: 600;
         }
 
-        /* Hero Section */
-        .hero {
-            background: url('assets/homebg.jpg') center/cover no-repeat;
-            color: #fff;
-            position: relative;
-            min-height: 500px;
-            display: flex;
-            align-items: center;
-        }
+    
 
-        .hero h1 {
-            font-size: 2.2rem;
-            font-weight: 700;
-        }
-
-        .btn-custom {
-            background: #c00;
-            color: #fff;
-            font-weight: 600;
-            padding: 10px 25px;
-            border-radius: 4px;
-        }
-
-        .btn-custom:hover {
-            background: #900;
-        }
-
-        /* Hero Right Numbers */
-        .hero-numbers {
-            position: absolute;
-            right: 40px;
-            top: 50%;
-            transform: translateY(-50%);
-            text-align: right;
-            font-size: 18px;
-            font-weight: 600;
-            line-height: 2.5;
-            opacity: 0.8;
-        }
-
-        .hero-numbers span.active {
-            color: #fff;
-            opacity: 1;
-        }
-
-
-
-
-
-
-
-
-
-
-
-
-        
         .breadcrumb {
             background: transparent;
             /* remove gray background */
@@ -170,155 +115,20 @@
 
 
         .custom-img {
-            max-height: 180px; /* adjust as needed */
-            width: 100%; /* keeps aspect ratio */
-        }
-
-        /* About Section */
-        .about-section {
-            padding: 60px 20px;
-            background-color: #f9f9f9;
-        }
-
-        .about-section h2 {
-            font-size: 22px;
-            font-weight: 700;
-            color: #c00;
-            margin-bottom: 15px;
-        }
-
-        .about-section p {
-            font-size: 15px;
-            line-height: 1.8;
-        }
-
-
-        /* Feature Cards */
-        .feature-card {
-            border: 1px solid #eee;
-            padding: 20px;
-            border-radius: 5px;
-            text-align: left;
-            background: #fff;
-            transition: all 0.3s ease;
-        }
-
-        .feature-card:hover {
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        }
-
-        .section-desc {
-            font-family: 'Outfit', sans-serif;
-            color: #555;
-        }
-
-        .categories-section {
-            background-color: #f9f9f9;
-        }
-
-        .category-card {
-            position: relative;
-            overflow: hidden;
-            border-radius: 5px;
-        }
-
-        .category-card img {
+            max-height: 180px;
+            /* adjust as needed */
             width: 100%;
-            height: 250px;
-            object-fit: cover;
-            display: block;
+            /* keeps aspect ratio */
         }
 
-        .category-card::after {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 50%;
-            background: linear-gradient(to top, rgba(255, 0, 0, 0.8), transparent);
-        }
-
-        .category-title {
-            position: absolute;
-            bottom: 10px;
-            left: 15px;
-            color: #fff;
-            font-weight: bold;
-            font-size: 18px;
-        }
-
-        .section-subtitle {
-            font-family: 'Outfit', sans-serif;
-            text-transform: uppercase;
-            font-size: 14px;
-            letter-spacing: 1px;
-            margin-bottom: 8px;
-        }
-
-        .section-title {
-            font-family: 'Baloo 2', cursive;
-            margin-bottom: 0;
-        }
-
+    
         .section-desc {
             font-family: 'Outfit', sans-serif;
             color: #555;
         }
 
-        .view-all {
-            /* text-decoration: none; */
-            font-weight: bold;
-            color: red;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-        }
 
-        .arrow-circle {
-            display: inline-flex;
-            justify-content: center;
-            align-items: center;
-            width: 28px;
-            height: 28px;
-            background-color: red;
-            border-radius: 50%;
-        }
-
-        .arrow-circle i {
-            font-size: 14px;
-            color: #fff;
-        }
-
-
-        .slider-container {
-
-            overflow: hidden;
-            position: relative;
-        }
-
-        .slides {
-            display: flex;
-            transition: transform 0.6s ease-in-out;
-        }
-
-        .slide {
-            min-width: 100%;
-            display: flex;
-            justify-content: center;
-            /* center images inside slide */
-            gap: 10px;
-            margin-top: 40px;
-        }
-
-        .slide img {
-            flex: 1;
-            /* make images take equal space */
-            max-width: calc((100% - 20px) / 3);
-            /* 3 images, 10px gap */
-            border-radius: 8px;
-            object-fit: cover;
-        }
+    
 
         .indicators {
             text-align: center;
@@ -392,20 +202,7 @@
         }
 
         @media (max-width: 768px) {
-            .hero {
-                text-align: center;
-                justify-content: center;
-            }
-
-            .hero h1 {
-                font-size: 1.8rem;
-            }
-
-            .hero-numbers {
-                display: none;
-                /* hide numbers in mobile for clean look */
-            }
-
+         
             .menuslide {
                 flex-direction: column;
                 align-items: center;
@@ -492,10 +289,15 @@
             <div class="col-12">
                 <h4 class="text-danger fw-bold " style="margin-top: 20px;">ABOUT US</h4>
                 <p style="margin-top: 20px;">
-                   BBF Rentals (B&B Formwork Division) is a trusted provider of construction equipment rental and materials supply, committed to delivering high-quality, reliable solutions for the building industry.
+                    BBF Rentals (B&B Formwork Division) is a trusted provider of construction equipment rental and
+                    materials supply, committed to delivering high-quality, reliable solutions for the building
+                    industry.
                 </p>
                 <p style="margin-top: 20px;">
-                    Formed as an internal facility of B&B Builders, the Formwork Division was originally created to meet in-house requirements for infrastructure, machinery, and plant equipment. Over time, recognizing the demand in the wider market, we evolved into a full-service rental and supply business, catering not only to our own projects but also to external construction companies.
+                    Formed as an internal facility of B&B Builders, the Formwork Division was originally created to meet
+                    in-house requirements for infrastructure, machinery, and plant equipment. Over time, recognizing the
+                    demand in the wider market, we evolved into a full-service rental and supply business, catering not
+                    only to our own projects but also to external construction companies.
                 </p>
             </div>
         </div>
@@ -504,7 +306,7 @@
     <!-- Budget Section -->
     <div class="container py-5">
         <div class="row align-items-start g-4">
-           <div class="col-md-4">
+            <div class="col-md-4">
                 <h5 class="fw-bold text-uppercase mb-4">
                     INTERESTING NUMBERS SPEAK FOR THEMSELVES
                 </h5>
@@ -512,15 +314,15 @@
             </div>
             <div class="col-md-8">
                 <p class="section-desc mb-4">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
                 <div class="row g-3 text-center">
@@ -536,10 +338,10 @@
                         <img src="assets/about4.png" alt="three" class="mb-2" width="90">
                         <p class="fw-bold">YEARS OF EXPERIENCE</p>
                     </div>
-                    </div>
                 </div>
             </div>
         </div>
+    </div>
 
 
 
@@ -549,246 +351,256 @@
             <p class="text-uppercase text-center fw-semibold mb-2" style="color:#d40000;">CHOOSE US</p>
             <h2 class="text-uppercase text-center fw-bold mb-5">REASON FOR CHOOSING US</h2>
 
-          
-           <div class="row g-3">
-            <!-- Left Column -->
-            <div class="col-md-6">
-                <img src="assets/chooseus.png" alt="Main" class="img-fluid w-100 object-fit-cover"style="height: 470px;">
-            </div>
 
-            <!-- Right Column -->
-            <div class="col-md-6 d-flex flex-column justify-content-between">
-                
-                <div class="mb-3 mx-5">
-                <img src="assets/one.png" alt="Icon 1" width="40" class="mb-2">
-                <p class="fw-bold">ON TIME DELIVERY</p>
-                <p> We ensure your equipment and materials arrive when you need them, keeping your projects on schedule</p>
+            <div class="row g-3">
+                <!-- Left Column -->
+                <div class="col-md-6">
+                    <img src="assets/chooseus.png" alt="Main" class="img-fluid w-100 object-fit-cover"
+                        style="height: 470px;">
                 </div>
 
-                <div class="mb-3 mx-5">
-                <img src="assets/two.png" alt="Icon 2" width="60" class="mb-2">
-                <p class="fw-bold" >QUALITY ASSURRED</p>
-                <p> All our equipment is sourced from trusted manufacturers and maintained to perform reliably.</p>
+                <!-- Right Column -->
+                <div class="col-md-6 d-flex flex-column justify-content-between">
+
+                    <div class="mb-3 mx-5">
+                        <img src="assets/one.png" alt="Icon 1" width="40" class="mb-2">
+                        <p class="fw-bold">ON TIME DELIVERY</p>
+                        <p> We ensure your equipment and materials arrive when you need them, keeping your projects on
+                            schedule</p>
+                    </div>
+
+                    <div class="mb-3 mx-5">
+                        <img src="assets/two.png" alt="Icon 2" width="60" class="mb-2">
+                        <p class="fw-bold">QUALITY ASSURRED</p>
+                        <p> All our equipment is sourced from trusted manufacturers and maintained to perform reliably.
+                        </p>
+                    </div>
+
+                    <div class="mb-3 mx-5">
+                        <img src="assets/three.png" alt="Icon 3" width="60" class="mb-2">
+                        <p class="fw-bold">SAFETY FIRST</p>
+                        <p>Every rental undergoes proper checks to meet safety standards, ensuring secure and worry-free
+                            operations.</p>
+                    </div>
+
                 </div>
-
-                <div class="mb-3 mx-5">
-                <img src="assets/three.png" alt="Icon 3" width="60" class="mb-2">
-                <p class="fw-bold">SAFETY FIRST</p>
-                <p>Every rental undergoes proper checks to meet safety standards, ensuring secure and worry-free operations.</p>
-                </div>
-
-            </div>
             </div>
 
-          
+
         </div>
 
-        
-          
-       <!-- Testimonial Section -->
-<div class="container py-5">
-  <p class="text-uppercase text-center fw-semibold mb-2" style="color:#d40000;">Testimonial</p>
-  <h2 class="text-uppercase text-center fw-bold mb-5">What Our Client Says About Us</h2>
 
-  <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
 
-      <!-- Slide 1 -->
-      <div class="carousel-item active">
-        <div class="row g-4 justify-content-center">
-          <div class="col-12 col-lg-4">
-            <div class="testimonial-card h-100 text-left p-3 border rounded">
-              <div class="quote-icon">❝</div>
-              <div class="d-flex align-items-start justify-content-start mb-3">
-                <img src="assets/client.png" class="client-img" alt="client">
-                <div class="ms-2">
-                  <h6 class="mb-0 fw-bold">Prakash</h6>
-                  <small class="text-muted">Client</small>
+        <!-- Testimonial Section -->
+        <div class="container py-5">
+            <p class="text-uppercase text-center fw-semibold mb-2" style="color:#d40000;">Testimonial</p>
+            <h2 class="text-uppercase text-center fw-bold mb-5">What Our Client Says About Us</h2>
+
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <div class="row g-4 justify-content-center">
+                            <div class="col-12 col-lg-4">
+                                <div class="testimonial-card h-100 text-left p-3 border rounded">
+                                    <div class="quote-icon">❝</div>
+                                    <div class="d-flex align-items-start justify-content-start mb-3">
+                                        <img src="assets/client.png" class="client-img" alt="client">
+                                        <div class="ms-2">
+                                            <h6 class="mb-0 fw-bold">Prakash</h6>
+                                            <small class="text-muted">Client</small>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4 d-none d-lg-block">
+                                <div class="testimonial-card h-100 text-left p-3 border rounded">
+                                    <div class="quote-icon">❝</div>
+                                    <div class="d-flex align-items-start justify-content-start mb-3">
+                                        <img src="assets/client.png" class="client-img" alt="client">
+                                        <div class="ms-2">
+                                            <h6 class="mb-0 fw-bold">Anita</h6>
+                                            <small class="text-muted">Client</small>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4 d-none d-lg-block">
+                                <div class="testimonial-card h-100 text-left p-3 border rounded">
+                                    <div class="quote-icon">❝</div>
+                                    <div class="d-flex align-items-start justify-content-start mb-3">
+                                        <img src="assets/client.png" class="client-img" alt="client">
+                                        <div class="ms-2">
+                                            <h6 class="mb-0 fw-bold">Ravi</h6>
+                                            <small class="text-muted">Client</small>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <div class="row g-4 justify-content-center">
+                            <div class="col-12 col-lg-4">
+                                <div class="testimonial-card h-100 text-left p-3 border rounded">
+                                    <div class="quote-icon">❝</div>
+                                    <div class="d-flex align-items-start justify-content-start mb-3">
+                                        <img src="assets/client.png" class="client-img" alt="client">
+                                        <div class="ms-2">
+                                            <h6 class="mb-0 fw-bold">John</h6>
+                                            <small class="text-muted">Client</small>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4 d-none d-lg-block">
+                                <div class="testimonial-card h-100 text-start p-3 border rounded">
+                                    <div class="quote-icon">❝</div>
+                                    <div class="d-flex align-items-start justify-content-start mb-3">
+                                        <img src="assets/client.png" class="client-img" alt="client">
+                                        <div class="ms-2">
+                                            <h6 class="mb-0 fw-bold">Meena</h6>
+                                            <small class="text-muted">Client</small>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4 d-none d-lg-block">
+                                <div class="testimonial-card h-100 text-left p-3 border rounded">
+                                    <div class="quote-icon">❝</div>
+                                    <div class="d-flex align-items-start justify-content-start mb-3">
+                                        <img src="assets/client.png" class="client-img" alt="client">
+                                        <div class="ms-2">
+                                            <h6 class="mb-0 fw-bold">Kiran</h6>
+                                            <small class="text-muted">Client</small>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-              </div>
-              <hr>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
             </div>
-          </div>
-          <div class="col-12 col-lg-4 d-none d-lg-block">
-            <div class="testimonial-card h-100 text-left p-3 border rounded">
-              <div class="quote-icon">❝</div>
-              <div class="d-flex align-items-start justify-content-start mb-3">
-                <img src="assets/client.png" class="client-img" alt="client">
-                <div class="ms-2">
-                  <h6 class="mb-0 fw-bold">Anita</h6>
-                  <small class="text-muted">Client</small>
-                </div>
-              </div>
-              <hr>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+
+            <!-- Indicators -->
+            <div class="text-center mt-4">
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0"
+                    class="active"></button>
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"></button>
             </div>
-          </div>
-          <div class="col-12 col-lg-4 d-none d-lg-block">
-            <div class="testimonial-card h-100 text-left p-3 border rounded">
-              <div class="quote-icon">❝</div>
-              <div class="d-flex align-items-start justify-content-start mb-3">
-                <img src="assets/client.png" class="client-img" alt="client">
-                <div class="ms-2">
-                  <h6 class="mb-0 fw-bold">Ravi</h6>
-                  <small class="text-muted">Client</small>
-                </div>
-              </div>
-              <hr>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
-            </div>
-          </div>
         </div>
-      </div>
-
-      <!-- Slide 2 -->
-      <div class="carousel-item">
-        <div class="row g-4 justify-content-center">
-          <div class="col-12 col-lg-4">
-            <div class="testimonial-card h-100 text-left p-3 border rounded">
-              <div class="quote-icon">❝</div>
-              <div class="d-flex align-items-start justify-content-start mb-3">
-                <img src="assets/client.png" class="client-img" alt="client">
-                <div class="ms-2">
-                  <h6 class="mb-0 fw-bold">John</h6>
-                  <small class="text-muted">Client</small>
-                </div>
-              </div>
-              <hr>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
-            </div>
-          </div>
-          <div class="col-12 col-lg-4 d-none d-lg-block">
-            <div class="testimonial-card h-100 text-start p-3 border rounded">
-              <div class="quote-icon">❝</div>
-              <div class="d-flex align-items-start justify-content-start mb-3">
-                <img src="assets/client.png" class="client-img" alt="client">
-                <div class="ms-2">
-                  <h6 class="mb-0 fw-bold">Meena</h6>
-                  <small class="text-muted">Client</small>
-                </div>
-              </div>
-              <hr>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
-            </div>
-          </div>
-          <div class="col-12 col-lg-4 d-none d-lg-block">
-            <div class="testimonial-card h-100 text-left p-3 border rounded">
-              <div class="quote-icon">❝</div>
-              <div class="d-flex align-items-start justify-content-start mb-3">
-                <img src="assets/client.png" class="client-img" alt="client">
-                <div class="ms-2">
-                  <h6 class="mb-0 fw-bold">Kiran</h6>
-                  <small class="text-muted">Client</small>
-                </div>
-              </div>
-              <hr>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
-            </div>
-          </div>
-        </div>
-      </div>
 
     </div>
-  </div>
 
-  <!-- Indicators -->
-  <div class="text-center mt-4">
-    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"></button>
-    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"></button>
-  </div>
-</div>
+    <footer class="bg-white text-dark pt-5 pb-3">
+        <div class="container">
+            <div class="row">
+                <!-- Left Column -->
+                <div class="col-md-4 mb-4 text-center text-md-start">
+                    <img src="assets/logo.png" alt="Logo" class="mb-3 img-fluid" style="max-width:150px;">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna.</p>
+                    <div>
+                        <a href="#" class="me-3 text-dark"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="me-3 text-dark"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-dark"><i class="fab fa-twitter fa-lg"></i></a>
+                    </div>
+                </div>
 
+                <!-- Right Column -->
+                <div class="col-md-8">
+                    <div class="row">
+
+                        <!-- Menus -->
+                        <div class="col-12 col-md-6 mb-4 text-center text-md-start">
+                            <h6 class="fw-bold mb-3">MENUS</h6>
+                            <ul class="list-unstyled mx-auto mx-md-0 text-center text-md-start"
+                                style="max-width: fit-content;">
+                                <li><a href="#" class="text-dark text-decoration-none mb-2 d-block">Home</a></li>
+                                <li><a href="/about.html" class="text-dark text-decoration-none mb-2 d-block">About
+                                        Us</a></li>
+                                <li><a href="/products.html"
+                                        class="text-dark text-decoration-none mb-2 d-block">Products</a></li>
+                                <li><a href="#" class="text-dark text-decoration-none mb-2 d-block">Gallery</a></li>
+                                <li><a href="#" class="text-dark text-decoration-none d-block">Contact Us</a></li>
+                            </ul>
+                        </div>
+
+
+                        <!-- Get in Touch -->
+                        <div class="col-12 col-md-6 text-center text-md-start">
+                            <h6 class="fw-bold mb-3">GET IN TOUCH</h6>
+
+                            <!-- Address -->
+                            <div
+                                class="d-flex flex-column align-items-center align-items-md-start mb-3 text-center text-md-start">
+                                <i class="fas fa-map-marker-alt mb-2 mb-md-0 me-md-2"></i>
+                                <div>
+                                    B&B Developers and Builders Pvt. Ltd.<br>
+                                    No. 2, 13th East Cross Road,<br>
+                                    Gandhinagar, Vellore – 632 006,<br>
+                                    Tamil Nadu, India
+                                </div>
+                            </div>
+
+                            <!-- Phone -->
+                            <div class="d-flex flex-column flex-md-row align-items-center align-items-md-start mb-2">
+                                <i class="fas fa-phone mb-1 mb-md-0 me-md-2"></i>
+                                <span>+91 70104 73833</span>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="d-flex flex-column flex-md-row align-items-center align-items-md-start">
+                                <i class="fas fa-envelope mb-1 mb-md-0 me-md-2"></i>
+                                <span class="text-break">businessdevelopment@bbbuilders.in</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+    </footer>
+
+    <!-- Bottom Bar -->
+    <div style="background: #c00; font-size: 16px; padding: 18px 0; color: #fff;">
+        <div class="container">
+            <div
+                class="d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
+                <span>Developed by Pocketlite</span>
+                <small class="mt-2 mt-md-0">© 2025 bbfrentals. All Rights Reserved.</small>
+            </div>
         </div>
-
-      <footer class="bg-white text-dark pt-5 pb-3">
-  <div class="container">
-    <div class="row">
-      <!-- Left Column -->
-      <div class="col-md-4 mb-4 text-center text-md-start">
-        <img src="assets/logo.png" alt="Logo" class="mb-3 img-fluid" style="max-width:150px;">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna.</p>
-        <div>
-          <a href="#" class="me-3 text-dark"><i class="fab fa-instagram fa-lg"></i></a>
-          <a href="#" class="me-3 text-dark"><i class="fab fa-facebook fa-lg"></i></a>
-          <a href="#" class="text-dark"><i class="fab fa-twitter fa-lg"></i></a>
-        </div>
-      </div>
-
-      <!-- Right Column -->
-      <div class="col-md-8">
-        <div class="row">
-         
-       <!-- Menus -->
-<div class="col-12 col-md-6 mb-4 text-center text-md-start">
-  <h6 class="fw-bold mb-3">MENUS</h6>
-  <ul class="list-unstyled mx-auto mx-md-0 text-center text-md-start" style="max-width: fit-content;">
-    <li><a href="#" class="text-dark text-decoration-none mb-2 d-block">Home</a></li>
-    <li><a href="/about.html" class="text-dark text-decoration-none mb-2 d-block">About Us</a></li>
-    <li><a href="/products.html" class="text-dark text-decoration-none mb-2 d-block">Products</a></li>
-    <li><a href="#" class="text-dark text-decoration-none mb-2 d-block">Gallery</a></li>
-    <li><a href="#" class="text-dark text-decoration-none d-block">Contact Us</a></li>
-  </ul>
-</div>
-
-
-         <!-- Get in Touch -->
-<div class="col-12 col-md-6 text-center text-md-start">
-  <h6 class="fw-bold mb-3">GET IN TOUCH</h6>
-
-  <!-- Address -->
-  <div class="d-flex flex-column align-items-center align-items-md-start mb-3 text-center text-md-start">
-    <i class="fas fa-map-marker-alt mb-2 mb-md-0 me-md-2"></i>
-    <div>
-      B&B Developers and Builders Pvt. Ltd.<br>
-      No. 2, 13th East Cross Road,<br>
-      Gandhinagar, Vellore – 632 006,<br>
-      Tamil Nadu, India
     </div>
-  </div>
-
-  <!-- Phone -->
-  <div class="d-flex flex-column flex-md-row align-items-center align-items-md-start mb-2">
-    <i class="fas fa-phone mb-1 mb-md-0 me-md-2"></i>
-    <span>+91 70104 73833</span>
-  </div>
-
-  <!-- Email -->
-  <div class="d-flex flex-column flex-md-row align-items-center align-items-md-start">
-    <i class="fas fa-envelope mb-1 mb-md-0 me-md-2"></i>
-    <span class="text-break">businessdevelopment@bbbuilders.in</span>
-  </div>
-</div>
-
-      </div>
     </div>
-  </div>
-</footer>
-
-<!-- Bottom Bar -->
-<div style="background: #c00; font-size: 16px; padding: 18px 0; color: #fff;">
-  <div class="container">
-    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
-      <span>Developed by Pocketlite</span>
-      <small class="mt-2 mt-md-0">© 2025 bbfrentals. All Rights Reserved.</small>
-    </div>
-  </div>
-</div>
-</div>
 
 
-        <!-- Bootstrap JS -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-        <script>
-        
-            const carouselElement = document.querySelector('#testimonialCarousel');
-            const carousel = new bootstrap.Carousel(carouselElement, {
-                interval: 4000,
-                ride: 'carousel'
-            });
+    <script>
 
-        </script>
+        const carouselElement = document.querySelector('#testimonialCarousel');
+        const carousel = new bootstrap.Carousel(carouselElement, {
+            interval: 4000,
+            ride: 'carousel'
+        });
+
+    </script>
 </body>
 
 </html>
